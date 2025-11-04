@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="pt-AO" itemscope itemtype="https://schema.org/EducationalOrganization">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Além do Além - Explicações Domiciliares & Desenvolvimento de Sites | Luanda, Angola</title>
+    <meta name="description" content="Aulas particulares em casa em Luanda, desenvolvimento de sites profissionais e marketing digital para empresas angolanas. Contacte 922 221 997">
+    <meta name="keywords" content="explicações luanda, aulas particulares angola, desenvolvimento sites luanda, marketing digital angola, professor particular, criar site angola, explicações domiciliárias luanda">
+    <meta name="author" content="Além do Além">
+    <link rel="canonical" href="https://alemdoalem.co.ao">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Além do Além - Explicações Domiciliares & Desenvolvimento de Sites | Luanda">
+    <meta property="og:description" content="Aulas particulares em casa, desenvolvimento de sites e marketing digital em Luanda, Angola">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alemdoalem.co.ao">
+    <meta property="og:image" content="https://alemdoalem.co.ao/images/og-image.jpg">
+    <meta property="og:site_name" content="Além do Além">
+    <meta property="og:locale" content="pt_AO">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Além do Além - Explicações em Luanda">
+    <meta name="twitter:description" content="Aulas particulares em casa em Luanda para todos os níveis">
+    <meta name="twitter:image" content="https://alemdoalem.co.ao/images/twitter-image.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Além do Além",
+        "description": "Serviços de explicações domiciliares e desenvolvimento web em Luanda, Angola",
+        "url": "https://alemdoalem.co.ao",
+        "telephone": "+244922221997",
+        "email": "contato@alemdoalem.co.ao",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Luanda",
+            "addressCountry": "AO"
+        },
+        "areaServed": "Luanda",
+        "serviceType": "Aulas particulares e desenvolvimento web",
+        "openingHours": "Mo-Sa 08:00-20:00",
+        "sameAs": []
+    }
+    </script>
+    
+    <style>
+        /* Reset e configurações gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #1a365d;
+            --secondary: #d4af37;
+            --accent: #e53e3c;
+            --light: #f7fafc;
+            --dark: #2d3748;
+            --text: #2d3748;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-name {
+            font-size: 1.8rem;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-name span {
+            color: var(--secondary);
+            position: relative;
+        }
+        
+        .logo-name span::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--secondary), transparent);
+        }
+        
+        .slogan {
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 2px;
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--secondary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+        }
+        
+        .slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(26, 54, 93, 0.7), rgba(26, 54, 93, 0.8));
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding: 8rem 0 4rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-weight: 300;
+        }
+        
+        .slogan-large {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 0.8rem 1.8rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid var(--secondary);
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            color: var(--secondary);
+        }
+        
+        /* Serviços */
+        .services {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 600px;
+            margin: 1.5rem auto 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            border-top: 4px solid var(--secondary);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            background-color: var(--primary);
+            color: var(--secondary);
+            font-size: 2.5rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-content h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+        
+        /* Sobre */
+        .about {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            position: relative;
+        }
+        
+        .about-text h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .about-gallery {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 3px solid var(--secondary);
+            height: 400px;
+        }
+        
+        .gallery-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gallery-slide.active {
+            opacity: 1;
+        }
+        
+        .gallery-controls {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            z-index: 3;
+        }
+        
+        .gallery-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .gallery-dot.active {
+            background-color: var(--secondary);
+        }
+        
+        /* Contacto */
+        .contact {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            font-size: 1.8rem;
+            position: relative;
+        }
+        
+        .contact-info h3::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            background-color: var(--secondary);
+            color: var(--primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+        
+        .contact-details h4 {
+            margin-bottom: 0.3rem;
+            color: var(--primary);
+        }
+        
+        .contact-details p {
+            color: #666;
+        }
+        
+        .contact-form {
+            background-color: var(--light);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: var(--secondary);
+            outline: none;
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-message {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+        
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--light);
+            padding: 4rem 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-item h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: var(--secondary);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: var(--shadow);
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 0;
+                text-align: center;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 0.8rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .slogan-large {
+                font-size: 1.2rem;
+            }
+            
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-gallery {
+                order: -1;
+            }
+            
+            .logo-img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
+            
+            .logo-name {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-img {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .logo-name {
+                font-size: 1.3rem;
+            }
+            
+            .slogan {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <!-- Header -->
+    <header itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <div class="container header-container">
+            <a href="/" class="logo" itemprop="url">
+                <div class="logo-img">
+                    <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fundo com gradiente moderno -->
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#2d4a7c;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#f4d03f;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Círculo de fundo com gradiente -->
+                        <circle cx="30" cy="30" r="28" fill="url(#grad1)" stroke="url(#grad2)" stroke-width="1.5"/>
+                        
+                        <!-- Elemento abstrato representando crescimento e expansão -->
+                        <path d="M20,20 Q30,10 40,20 T60,30 T40,40 T20,40 T10,30 T20,20" 
+                              fill="none" 
+                              stroke="url(#grad2)" 
+                              stroke-width="2.5" 
+                              stroke-linecap="round"/>
+                        
+                        <!-- Linha ascendente representando progresso -->
+                        <path d="M25,35 L35,25" 
+                              stroke="#f7fafc" 
+                              stroke-width="3" 
+                              stroke-linecap="round"/>
+                        
+                        <!-- Pontos representando conquistas/marcos -->
+                        <circle cx="25" cy="35" r="2.5" fill="#f7fafc"/>
+                        <circle cx="35" cy="25" r="2.5" fill="#f7fafc"/>
+                        
+                        <!-- Elemento de destaque - estrela moderna -->
+                        <path d="M30,15 L32,20 L37,20 L33,23 L35,28 L30,25 L25,28 L27,23 L23,20 L28,20 Z" 
+                              fill="url(#grad2)"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-name">Além do <span>Além</span></div>
+                    <div class="slogan" itemprop="description">Elevando o conhecimento angolano</div>
+                </div>
+            </a>
+            <div class="mobile-menu">☰</div>
+            <nav role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#home" itemprop="url">Início</a></li>
+                    <li><a href="#servicos" itemprop="url">Serviços</a></li>
+                    <li><a href="#sobre" itemprop="url">Sobre</a></li>
+                    <li><a href="#contacto" itemprop="url">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="slide-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 itemprop="headline">Além do Além - Explicações Domiciliares em Luanda</h1>
+            <div class="slogan-large">"Elevando o conhecimento angolano para novos horizontes"</div>
+            <p itemprop="description">Serviços de explicação domiciliar de excelência em Luanda. Professores qualificados para todas as disciplinas e níveis de ensino. Desenvolvimento de sites profissionais para empresas angolanas.</p>
+            <a href="#contacto" class="btn">Contacte-nos Agora</a>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços em Luanda</h2>
+                <p>Oferecemos explicações personalizadas e desenvolvimento web adaptados à realidade angolana</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <div class="service-icon">📚</div>
+                    <div class="service-content">
+                        <h3 itemprop="name">Explicações Domiciliares</h3>
+                        <p itemprop="description">Apoio escolar para crianças do ensino primário em todas as disciplinas fundamentais, com métodos adaptados à realidade angolana.</p>
+                        <div style="margin-top: 1rem;">
+                            <strong>Preços em Luanda:</strong>
+                            <ul style="list-style: none; margin-top: 0.5rem;">
+                                <li>• Primário: 5.000-8.000 AOA/aula</li>
+                                <li>• Secundário: 8.000-15.000 AOA/aula</li>
+                                <li>• Universitário: 15.000-25.000 AOA/aula</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/244922221997?text=Olá! Gostaria de aulas particulares em Luanda" class="btn" style="margin-top: 1rem;">📞 922 221 997</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <div class="service-content">
+                        <h3>Desenvolvimento de Sites</h3>
+                        <p>Sites profissionais para empresas angolanas com domínio .ao ou .com e hospedagem incluída.</p>
+                        <div style="margin-top: 1rem;">
+                            <strong>Pacotes para Angola:</strong>
+                            <ul style="list-style: none; margin-top: 0.5rem;">
+                                <li>• Site Básico: 50.000-100.000 AOA</li>
+                                <li>• Site Profissional: 100.000-250.000 AOA</li>
+                                <li>• E-commerce: 250.000-500.000 AOA</li>
+                                <li>• Manutenção: 15.000 AOA/mês</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/244922221997?text=Olá! Gostaria de um orçamento para site" class="btn" style="margin-top: 1rem;">💻 Orçamento Grátis</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <div class="service-content">
+                        <h3>Marketing Digital</h3>
+                        <p>Gestão de redes sociais, SEO e campanhas online para empresas angolanas.</p>
+                        <div style="margin-top: 1rem;">
+                            <strong>Serviços em Luanda:</strong>
+                            <ul style="list-style: none; margin-top: 0.5rem;">
+                                <li>• Gestão Redes Sociais: 25.000 AOA/mês</li>
+                                <li>• SEO Otimização: 35.000 AOA/mês</li>
+                                <li>• Campanhas Facebook/Instagram: +15.000 AOA</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/244922221997?text=Olá! Gostaria de marketing digital" class="btn" style="margin-top: 1rem;">📱 Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Nós em Luanda</h2>
+                    <p>A <strong>Além do Além</strong> nasceu da necessidade de oferecer serviços de explicação de qualidade, adaptados à realidade angolana e focados no sucesso académico dos nossos estudantes em Luanda.</p>
+                    <p>Somos uma equipa de professores qualificados e experientes, dedicados a ajudar estudantes a alcançar o sucesso académico através de explicações personalizadas no conforto do seu lar em Luanda.</p>
+                    <p>Com anos de experiência no sector educativo em Angola, entendemos as necessidades específicas dos estudantes angolanos e adaptamos o nosso método de ensino para garantir os melhores resultados.</p>
+                    <p>O nosso objectivo é não apenas melhorar as notas, mas também desenvolver o gosto pela aprendizagem e promover a confiança dos nossos alunos, preparando-os para ir "além do além".</p>
+                </div>
+                <div class="about-gallery">
+                    <div class="gallery-slide active" style="background-image: url('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="gallery-slide" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="gallery-slide" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="gallery-slide" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="gallery-controls">
+                        <div class="gallery-dot active" data-index="0"></div>
+                        <div class="gallery-dot" data-index="1"></div>
+                        <div class="gallery-dot" data-index="2"></div>
+                        <div class="gallery-dot" data-index="3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--primary);">Perguntas Frequentes - Luanda</h2>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Como funcionam as explicações domiciliares em Luanda?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">O professor desloca-se à sua casa em Luanda para aulas particulares personalizadas conforme sua disponibilidade horária. Trabalhamos com todos os bairros de Luanda.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Quais disciplinas estão disponíveis para aulas em Luanda?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Oferecemos todas as disciplinas do ensino primário ao universitário em Luanda, com foco em matemática, ciências, línguas e preparação para exames nacionais.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Quanto custa desenvolver um site em Angola?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Sites profissionais para empresas angolanas começam em 50.000 AOA, incluindo domínio .ao, hospedagem e optimização SEO para o mercado de Luanda e Angola.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contacto - Luanda</h2>
+                <p>Estamos aqui para ajudar. Entre em contacto para marcar uma aula experimental ou orçamento</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações de Contacto em Luanda</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p><a href="tel:+244922221997" style="color: var(--primary); text-decoration: none;">922 221 997</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Localização</h4>
+                            <p>Luanda, Angola</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sábado: 8h00 - 20h00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/244922221997" style="color: var(--primary); text-decoration: none;">922 221 997</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" class="form-control">
+                                <option value="">Seleccione um serviço</option>
+                                <option value="Explicações">Explicações Domiciliares</option>
+                                <option value="Site">Desenvolvimento de Site</option>
+                                <option value="Marketing">Marketing Digital</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" class="form-control" placeholder="Descreva as suas necessidades..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn" id="submitBtn">Enviar Mensagem</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Além do Além</h3>
+                    <p>Elevando o conhecimento angolano para novos horizontes através de serviços de explicação domiciliar e desenvolvimento web de qualidade em Luanda.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook" aria-label="Facebook">f</a>
+                        <a href="#" title="Instagram" aria-label="Instagram">ig</a>
+                        <a href="https://wa.me/244922221997" title="WhatsApp" aria-label="WhatsApp">w</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Serviços em Luanda</h3>
+                    <ul>
+                        <li><a href="#servicos">Explicações Domiciliares</a></li>
+                        <li><a href="#servicos">Desenvolvimento de Sites</a></li>
+                        <li><a href="#servicos">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>📞 922 221 997</li>
+                        <li>📍 Luanda, Angola</li>
+                        <li>⏰ Seg-Sáb: 8h-20h</li>
+                        <li>💬 WhatsApp: 922 221 997</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Além do Além - Explicação Domiciliar e Desenvolvimento Web em Luanda, Angola. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        // Fechar menu ao clicar num link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav ul').classList.remove('show');
+            });
+        });
+        
+        // Adicionar efeito de scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const formMessage = document.getElementById('formMessage');
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'A enviar...';
+            
+            // Simular envio
+            setTimeout(() => {
+                formMessage.textContent = 'Mensagem enviada com sucesso! Entraremos em contacto brevemente.';
+                formMessage.className = 'form-message success';
+                document.getElementById('contactForm').reset();
+                
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Enviar Mensagem';
+            }, 1000);
+        });
+
+        // Slideshow do Hero
+        function initHeroSlideshow() {
+            const slides = document.querySelectorAll('.hero .slide');
+            let currentSlide = 0;
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+            
+            // Mudar slide a cada 5 segundos
+            setInterval(nextSlide, 5000);
+        }
+        
+        // Carrossel da Galeria
+        function initGalleryCarousel() {
+            const slides = document.querySelectorAll('.gallery-slide');
+            const dots = document.querySelectorAll('.gallery-dot');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Remover classe active de todos os slides e dots
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                // Adicionar classe active ao slide e dot selecionados
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+                
+                currentSlide = index;
+            }
+            
+            // Adicionar eventos aos dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                });
+            });
+            
+            // Auto-play do carrossel
+            function nextSlide() {
+                const nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }
+            
+            // Mudar slide a cada 4 segundos
+            setInterval(nextSlide, 4000);
+        }
+        
+        // Inicializar slideshows quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            initHeroSlideshow();
+            initGalleryCarousel();
+        });
+
+        // Schema.org dinâmico
+        const localBusinessSchema = {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Além do Além",
+            "description": "Serviços de explicações domiciliares e desenvolvimento web em Luanda, Angola",
+            "url": "https://alemdoalem.co.ao",
+            "telephone": "+244922221997",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Luanda",
+                "addressCountry": "AO"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "-8.8383",
+                "longitude": "13.2344"
+            },
+            "openingHours": "Mo-Sa 08:00-20:00",
+            "areaServed": "Luanda",
+            "sameAs": []
+        };
+
+        const schemaScript = document.createElement('script');
+        schemaScript.type = 'application/ld+json';
+        schemaScript.text = JSON.stringify(localBusinessSchema);
+        document.head.appendChild(schemaScript);
+    </script>
+</body>
+</html>
